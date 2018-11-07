@@ -11,7 +11,7 @@
 #Project Description
 Utilize APIs to create a system that allows touring musicians to quickly find markets where their songs are most popular.
 Create a list of potential venues in these markets along with contact information to assist with building and booking tours. Include Venue 
-Name, Address, Address, and Capacity.
+Name, Address, Website URL, and Capacity.
 
 
 #Suggested APIs:
