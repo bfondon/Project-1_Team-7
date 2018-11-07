@@ -1,3 +1,6 @@
+#Project/Application Name
+**TourStation**
+
 #Team Members:
 ⋅⋅* Ben Fondon -- Project Manager
 ⋅⋅* Michael Baggett -- Utility
@@ -5,10 +8,16 @@
 ⋅⋅* Ellie Audet -- Front End GUI / CSS
 ⋅⋅* Tony Velasco -- Back End / API
 
-#PROPOSAL
-...Create a system to allow touring musicians to quickly find Top 30 Markets where their songs are most popular.
-Create a list of potential venues in these Top 30 Markets. Include Venue Name, Address, Website, and Capacity.
+#Project Description
+Utilize APIs to create a system that allows touring musicians to quickly find markets where their songs are most popular.
+Create a list of potential venues in these markets along with contact information to assist with building and booking tours. Include Venue 
+Name, Address, Address, and Capacity.
 
-#Suggested API:
-...Spotify
-...BandCamp
+
+#Suggested APIs:
+Spotify
+BandCamp/Songkick
+
+#Next Steps 
+
+
