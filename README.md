@@ -20,6 +20,7 @@ Name, Address, Website URL, and Capacity.
 Spotify
 BandCamp/Songkick
 
-#Next Steps 
-
-
+#Tasks
+Create HTML framework
+Finalize Semantic UI design & Fine Tune - Emphasis on mobile responsiveness
+Research API documentation, build out functionality in JS.
