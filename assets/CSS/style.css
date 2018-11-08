@@ -1,6 +1,19 @@
+body, html {
+    height: 100%;
+    background-image: url("../images/livemusic4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#page-heading{
+    height: 20em;
+}
+
 h1 {
     color: red;
     font-family: Noto Serif;
+    font-size: 3.25rem;
     font-weight: bold;
     text-align: center;
 }
