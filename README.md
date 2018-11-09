@@ -1,7 +1,7 @@
 # Project/Application Name
 **TourStation** - Deployed Page:https://bfondon.github.io/Project-1_Team-7/
 
-# Team Members:
+## Team Members:
 * Ben Fondon -- Project Manager
 * Michael Baggett -- Utility
 * Peng Si -- Firebase
