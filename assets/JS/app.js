@@ -6,7 +6,7 @@ function ajaxCall(country){
     headers:{
       "Accept": "application/json",
       "Content-Type": "application/json",
-      "Authorization": "Bearer BQAjvIq1-boBzeNYvh0Qeu28FlyH1STugTgSbiKRJqVT6CaXphr6J0S4TozRYqz-q28bIOdcekvhoemIrYC9UJ15mMoyc0fGsXHV-LSEu7Jjk7BhowJUAz70adjsYPcb6UeSrE7voHMYy1YK70g"
+      "Authorization": "Bearer BQDMUoJuL4PDM4VLmPCyuiYTitmPtAaUEARAXUU6RkGaFNFh_pKG27fkDWYxBQ6d73Vm7H0ElqJ"
     }
   }).then(function(response) {
     console.log(response);
