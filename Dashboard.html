@@ -7,11 +7,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script type='text/javascript' src='assets/js/game.js'></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script type='text/javascript' src='assets/js/game.js'></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
 <body>
+    <div class="ui compact menu">
+        <div class="ui simple dropdown item">
+            Explore!
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a href="index.html" class="item">Home</a>
+                <a href="Dashboard.html" class="item">Dashboard</a>
+                <a href="" class="item">Page 3</a>
+            </div>
+        </div>
+    </div>
     <input type="text" value="austin,tx">
     <button type="button">submit</button>
     <div id="venue-list">
@@ -21,23 +33,24 @@
         var city
 
         $("button").click(function () {
-            
+
             city = $("input").val()
-            var queryURL = "https://api.foursquare.com/v2/venues/search?&client_id=N3WBPOBFZFE3NPZX2UZNQ5SCRRXVRXV0DTXQQ0NIJHYAU1YX&client_secret=ZXWPDZ33GEYF0FDKTX1DXFTYNCIPXVC1TIWTHFR2UTYGCKZX&near=" + city + "&limit=30&query=music+venue&v=20181212"
+            var queryURL =
+                "https://api.foursquare.com/v2/venues/search?&client_id=N3WBPOBFZFE3NPZX2UZNQ5SCRRXVRXV0DTXQQ0NIJHYAU1YX&client_secret=ZXWPDZ33GEYF0FDKTX1DXFTYNCIPXVC1TIWTHFR2UTYGCKZX&near=" +
+                city + "&limit=30&query=music+venue&v=20181212"
             $.ajax({
                 url: queryURL,
                 method: "GET"
             }).then(function (callback) {
                 console.log(callback)
-                for (var i=0; i<30; i++){
-                    var venueName= callback.response.venues[i].name
+                for (var i = 0; i < 30; i++) {
+                    var venueName = callback.response.venues[i].name
                     $("#venue-list").append("*" + venueName + "<br>")
                 }
 
             })
 
         })
-
     </script>
 </body>
 
