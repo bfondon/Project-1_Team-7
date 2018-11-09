@@ -6,21 +6,13 @@ function ajaxCall(country){
     headers:{
       "Accept": "application/json",
       "Content-Type": "application/json",
-      "Authorization": "Bearer BQDMUoJuL4PDM4VLmPCyuiYTitmPtAaUEARAXUU6RkGaFNFh_pKG27fkDWYxBQ6d73Vm7H0ElqJ"
+      "Authorization": "Bearer BQBxasl7fUckdbsGSntQalFFlyp21BokrjogawR3mJ7BKvHzqcJ0aNVtUQe3muMSn4GjhzicdanMNTR2Wvt3XRYw011UUcQt2Mb7RGIlPKBMXBQ1Q6KOk8cuackRlXBRdEuHMAKGc-gkTb7mOErh9wGk4rH7KUbgqnWCIhaoYR8WxcZkvFoc0jad3iMrjOC73L-n2bGrcL2X8qiEaPRD9abbqL5xJpcJFwSOWF0GqFp3nCJDRzixLn-dqGy_pKzW0g9tSUku6rbObFGY-7pB"
     }
   }).then(function(response) {
-    console.log(response);
-    console.log(country + " #1: " + response.tracks[0].name);
-    console.log(country + " #2: " + response.tracks[1].name);
-    console.log(country + " #3: " + response.tracks[2].name);
-    console.log(country + " #4: " + response.tracks[3].name);
-    console.log(country + " #5: " + response.tracks[4].name);
-    console.log(country + " #6: " + response.tracks[5].name);
-    console.log(country + " #7: " + response.tracks[6].name);
-    console.log(country + " #8: " + response.tracks[7].name);
-    console.log(country + " #9: " + response.tracks[8].name);
-    console.log(country + " #10: " + response.tracks[9].name);
 
+for (i = 0; i < 10; i++) {
+      $("#topHits").append("<li>" + country + " #" + (i + 1) + ": " + response.tracks[i].name + "</li>");
+    }
   });
   }
   setTimeout(function(){
@@ -47,5 +39,3 @@ function ajaxCall(country){
   // The Spotify API goes above this text ^^ 
   
 // ---------------------------------------------------------
-
-  console.log("Because our AJAX requests are asynchronous, this line of code will most likely log first");
