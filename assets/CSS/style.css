@@ -32,4 +32,10 @@ h2, #results-heading {
     color: blue;
 }
 
+#venue-list {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
 /* This is some shit. */
