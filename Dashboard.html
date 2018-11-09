@@ -27,7 +27,7 @@
     <input type="text" value="austin,tx">
     <button type="button">submit</button>
     <div id="venue-list">
-    <div id="topHits">Top Hits by Country</div>
+        <div id="topHits">Top Hits by Country</div>
 
     </div>
     <script>
@@ -37,15 +37,15 @@
 
             city = $("input").val()
             var queryURL =
-                "https://api.foursquare.com/v2/venues/search?&client_id=N3WBPOBFZFE3NPZX2UZNQ5SCRRXVRXV0DTXQQ0NIJHYAU1YX&client_secret=ZXWPDZ33GEYF0FDKTX1DXFTYNCIPXVC1TIWTHFR2UTYGCKZX&near=" +
-                city + "&limit=30&query=music+venue&v=20181212"
+                "https://api.foursquare.com/v2/venues/explore?&client_id=N3WBPOBFZFE3NPZX2UZNQ5SCRRXVRXV0DTXQQ0NIJHYAU1YX&client_secret=ZXWPDZ33GEYF0FDKTX1DXFTYNCIPXVC1TIWTHFR2UTYGCKZX&near=" +
+                city + "&limit=100&query=venue&v=20181212"
             $.ajax({
                 url: queryURL,
                 method: "GET"
             }).then(function (callback) {
                 console.log(callback)
-                for (var i = 0; i < 30; i++) {
-                    var venueName = callback.response.venues[i].name
+                for (var i = 0; i < 100; i++) {
+                    var venueName = callback.response.groups[0].items[i].venue.name
                     $("#venue-list").append("*" + venueName + "<br>")
                 }
 
