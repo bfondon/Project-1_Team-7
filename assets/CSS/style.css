@@ -23,13 +23,17 @@ h2, #results-heading {
 }
 
 
-#clear, #spotify-results, #trends-results, #test {
+#clear, #spotify-results, #trends-results, #methodology {
     background:rgba(0,0,0,0.25);
     color: white;
 }
 
 .item {
     color: blue;
+}
+
+.ui_vertical_segment{
+    margin:30px 15px;
 }
 
 #venue-list {
