@@ -4,7 +4,7 @@
 ## Team Members:
 * Ben Fondon -- Project Manager
 * Michael Baggett -- Utility
-* Peng Si -- Firebase
+* Peng Si -- API/(Firebase posibblely)
 * Ellie Audet -- Front End GUI / CSS
 * Tony Velasco -- Back End / API
 
