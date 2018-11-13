@@ -8,7 +8,7 @@ function ajaxCall(country){
     headers:{
       "Accept": "application/json",
       "Content-Type": "application/json",
-      "Authorization": "Bearer BQBXKYVHR_R8f7rW2xg_yRApTEQvlJ1RCJ8N8Wbx1AN930Bsbf87rAh4j9Gt5LO3uOIXFH-Y0G762n8Ccfp20s_oxBSNxCchJqUzp5kq4xxknERH7kFyBgyqLNGPDyg7EY8z0qUUXbbITdAA5IiYLXsXBmpMjD6y4bm2lZQz27TojQBeiZB3zCMBWAfm3qDsQyiuLyRagBoQ_EwlVMG_1sK8hOtu0JXZinSiN5JILnc--lH-PxokNIJVzwFGrhS5CQwxBopH7vXfweAiFdZO"
+      "Authorization": "Bearer BQBjl3Kl9v1UiYv7Zet9_23RuWUZMGjCBY-UBapuweRjXbdTQbCdtwH9dASy2AzMkdZWyrxwSEc9wQSWhdQtPKopgUoxjDedz1TmjNe4uXUOehmp1dfRXiFVblzsJpXLPOyhLYbTSRuuJ5dXjATQwglQ98PFc9sYEZsiaVAovRdyxkAak6MWRZINz9BxmN_hYJGWrRICSLP33lNM6OqmviNXeK8WgLxo8Q00hbDti5xrwlsaAWTHzGir5PXiQF2f_1MvvR_YzZrRDiHhMuEJ"
     }
   }).then(function(response) {
 
