@@ -32,6 +32,7 @@
 
         </div>
     </div>
+
     <script>
         var city
 
@@ -47,10 +48,6 @@
                 method: "GET"
             }).then(function (callback) {
                 console.log(callback)
-
-                for (var i=0; i<100; i++){
-                    var venueName= callback.response.groups[0].items[i].venue.name
-                    $("#venue-list").append("*" + venueName + "<br>")
                   
                 for (var i = 0; i < 100; i++) {
                     var venueName = callback.response.groups[0].items[i].venue.name;
