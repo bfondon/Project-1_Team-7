@@ -43,11 +43,18 @@ h2, #results-heading {
     color: white;
     padding: 5px;
     box-sizing: border-box;
+    max-height: 400px;
+    overflow: scroll;
 }
 
 #city-list {
-    color: white
+    color: white;
+    font-size: 15px;
 }
+.cities {
+    padding: 10px;
+}
+
 .cities:hover,
 .cities:active {
     background-color: blueviolet;
