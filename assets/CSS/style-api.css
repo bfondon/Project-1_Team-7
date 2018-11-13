@@ -1,0 +1,31 @@
+.cities:hover,
+.cities:active {
+    background-color: lightpink;
+}
+
+.selectbycountry {
+    margin: 20px 10px;
+    padding: 10px 30px;
+}
+
+#city-list {
+    color: maroon;
+    font-weight: bold;
+
+}
+
+.cities, .venues {
+    color: black;
+    width: 350px;
+}
+
+
+#venue-list {
+    color:lightsalmon;
+    font-weight: bold;
+}
+
+#city-list, #venue-list {
+    margin: 10px;
+    padding: 10px 30px;
+}
