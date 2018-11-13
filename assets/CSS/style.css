@@ -42,4 +42,19 @@ h2, #results-heading {
     padding: 5px;
     box-sizing: border-box;
 }
+
+#city-list {
+    color: white
+}
+.cities:hover,
+.cities:active {
+    background-color: blueviolet;
+}
+
+.venues{
+    background-color: #E6E6FA;
+    color: black;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
 /* This is some shit. */
