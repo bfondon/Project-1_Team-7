@@ -24,11 +24,13 @@
             </div>
         </div>
     </div>
-    <input type="text" value="austin,tx">
-    <button type="button">submit</button>
-    <div id="venue-list">
+    <div class="ui container" style="margin-top: 5px">
+        <input type="text" value="austin,tx">
+        <button type="button">submit</button>
         <div id="topHits">Top Hits by Country</div>
+        <div id="venue-list">
 
+        </div>
     </div>
     <script>
         var city
@@ -45,8 +47,13 @@
             }).then(function (callback) {
                 console.log(callback)
                 for (var i = 0; i < 100; i++) {
-                    var venueName = callback.response.groups[0].items[i].venue.name
-                    $("#venue-list").append("*" + venueName + "<br>")
+                    var venueName = callback.response.groups[0].items[i].venue.name;
+                    var venueDiv = $("<div>");
+                    venueDiv.attr("class", "venue");
+
+                    venueDiv.append(venueName);
+                    $("#venue-list").append(venueDiv);
+
                 }
 
             })
