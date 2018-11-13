@@ -1,5 +1,5 @@
 // Performing GET requests to the OMDB API and logging the responses to the console
-var artist = "62sC6lUEWRjbFqXpMmOk4G"
+var artist = "3PhoLpVuITZKcymswpck5b"
 
 function ajaxCall(country){
     $.ajax({
