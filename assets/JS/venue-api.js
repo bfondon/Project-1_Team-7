@@ -3,13 +3,13 @@ var city;
 var limit = 200;
 
 $("button").click(function () {
-     
+
     $("#city-list").remove()
 
     var country = $("input").val().trim().toLowerCase()
     var cityList = $("<div>")
     cityList.attr("id", "city-list")
-    cityList.text("Hot cities: ")
+    cityList.append("<h2>"+ "Hot cities: " +"</h2>")
     $(".selectbycountry").after(cityList)
     for (var i = 0; i < toplistOfCities.length; i++) {
 
@@ -29,7 +29,7 @@ $("button").click(function () {
 
                     var venueList = $("<div>")
                     venueList.attr("id", "venue-list")
-                    venueList.text("Trending venues: ")
+                    venueList.append("<h3>"+ "Trending venues: " + "</h3>")
                     $(event.target).append(venueList)
 
                     city = $(event.target).attr("id")
@@ -44,12 +44,16 @@ $("button").click(function () {
                             var vanueName;
                             if (callback.response.groups[0].items[i]) {
                                 venueName = callback.response.groups[0].items[i].venue.name
+                                formatAddress = callback.response.groups[0].items[i].venue.location.formattedAddress
                                 var f = callback.response.groups[0].items[i].venue.categories[0].pluralName
                                 if (f === "Rock Clubs" || f === "Nightclubs" || f === "Music Venues" || f === "Jazz Clubs" || f === "Lounges") {
                                     var newDiv2 = $("<div>");
-                                    newDiv2.text(venueName);
+                                    newDiv2.append("<h4>" + venueName + "</h4>");
                                     newDiv2.addClass("venues");
                                     newDiv2.attr("id", venueName)
+                                    newDiv2.append("<p>" + formatAddress[0] + "</p>")
+                                    newDiv2.append("<p>" + formatAddress[1] + "</p>")
+                                    newDiv2.append("<p>" + formatAddress[2] + "</p>")
                                     $(venueList).append(newDiv2)
                                 }
                             }
@@ -132,85 +136,85 @@ var toplistOfCities =
         },
         {
             country: "china",
-            cities:["beijing","shanghai","chongqing"]
+            cities: ["beijing", "shanghai", "chongqing"]
         },
         {
             country: "japan",
-            cities: ["tokyo","yokohama","osaka"]
+            cities: ["tokyo", "yokohama", "osaka"]
         },
         {
             country: "germany",
-            cities:  ["berlin","rhine-ruhr","hamburg"]
+            cities: ["berlin", "rhine-ruhr", "hamburg"]
 
-        },{
+        }, {
             country: "united kingdom",
-            cities: ["london","manchester","birmingham"]
-        },{
+            cities: ["london", "manchester", "birmingham"]
+        }, {
             country: "france",
-            cities:  ["paris","marseille","lyon"]
-        },{
+            cities: ["paris", "marseille", "lyon"]
+        }, {
             country: "india",
-            cities: ["new delhi","mumbai","delhi"]
-        },{
+            cities: ["new delhi", "mumbai", "delhi"]
+        }, {
             country: "italy",
-            cities: ["rome","milan","florance"]
-        },{
+            cities: ["rome", "milan", "florance"]
+        }, {
             country: "brazil",
-            cities:["brasilia","sao paulo","rio de janeiro"]
-        },{
+            cities: ["brasilia", "sao paulo", "rio de janeiro"]
+        }, {
             country: "canada",
-            cities: ["ottawa","toronto","montreal"]
-        },{
+            cities: ["ottawa", "toronto", "montreal"]
+        }, {
             country: "south kerea",
-            cities: ["seoul","busan","daegu"]
-        },{
+            cities: ["seoul", "busan", "daegu"]
+        }, {
             country: "australia",
-            cities:["canberra","sydney","melbourne"]
-        },{
+            cities: ["canberra", "sydney", "melbourne"]
+        }, {
             country: "russia",
-            cities: ["moscow","saint petersburg"]
-        },{
+            cities: ["moscow", "saint petersburg"]
+        }, {
             country: "spain",
-            cities: ["madrid","barcelona"]
-        },{
+            cities: ["madrid", "barcelona"]
+        }, {
             country: "mexico",
-            cities: ["mexico city","ecatepec", "cacun"]
-        },{
+            cities: ["mexico city", "ecatepec", "cacun"]
+        }, {
             country: "turkey",
-            cities: ["ankara","istanbul"]
-        },{
+            cities: ["ankara", "istanbul"]
+        }, {
             country: "netherlands",
-            cities: ["amsterdam","rotterdam"]
-        },{
+            cities: ["amsterdam", "rotterdam"]
+        }, {
             country: "switzerland",
-            cities: ["bern","zurich","geneva"]
-        },{
+            cities: ["bern", "zurich", "geneva"]
+        }, {
             country: "saudi arabia",
-            cities: ["riyadh","jeddah"]
-        },{
+            cities: ["riyadh", "jeddah"]
+        }, {
             country: "argentina",
-            cities: ["buenos aires","cordoba"]
-        },{
+            cities: ["buenos aires", "cordoba"]
+        }, {
             country: "sweden",
-            cities: ["stockholm","gothenburg"]
-        },{
+            cities: ["stockholm", "gothenburg"]
+        }, {
             country: "poland",
-            cities: ["warsaw","krakow"]
-        },{
+            cities: ["warsaw", "krakow"]
+        }, {
             country: "belgium",
-            cities: ["brussels","antwerp"]
-        },{
+            cities: ["brussels", "antwerp"]
+        }, {
             country: "thailand",
-            cities: ["bangkok","nonthaburi","pak kret"]
-        },{
+            cities: ["bangkok", "nonthaburi", "pak kret"]
+        }, {
             country: "austria",
-            cities: ["vienna","graz"]
-        },{
+            cities: ["vienna", "graz"]
+        }, {
             country: "norway",
-            cities: ["oslo","bergen"]
-        },{
+            cities: ["oslo", "bergen"]
+        }, {
             country: "united arab emirates",
-            cities: ["abu dhabi","dubai"]
-        }          
-        
+            cities: ["abu dhabi", "dubai"]
+        }
+
     ]
