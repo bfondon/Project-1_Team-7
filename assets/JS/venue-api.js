@@ -128,7 +128,7 @@ var toplistOfCities =
         },
         {
             country: "united states",
-            cities: ["washington, d.c.", "New York City", "Los Angeles"]
+            cities: ["Austin, TX", "Washington, D.C.", "New York City, NY", "Los Angeles, CA", "Chicago, IL", "Nashville, TN", "Detroit, MI", "Houston, TX", "Denver, CO"]
         },
         {
             country: "china",
