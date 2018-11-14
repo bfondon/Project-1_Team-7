@@ -1,6 +1,6 @@
 // Performing GET requests to the OMDB API and logging the responses to the console
-var artist = "3PhoLpVuITZKcymswpck5b"
-console.log("test");
+var artist = "01aC2ikO4Xgb2LUpf9JfKp"
+
 function ajaxCall(country){
     $.ajax({
     url: "https://api.spotify.com/v1/artists/"+artist+"/top-tracks?country="+country,
@@ -9,7 +9,7 @@ function ajaxCall(country){
       "Accept": "application/json",
       "Content-Type": "application/json",
 
-      "Authorization": "Bearer BQARD5L_9_Zydkq0EZD6ZThql2qh80_hQ-mlzJ9eY_DCCrk_tBtGrBPiePrTcbMlfPIxCl7kQCa0zUfF3Bq4jwUSue8VTdr1TrtYr7WHTcP0quXoSAcBfO8WO59JpnOLFfS1ZwLvBKAjhoKmbSencoLly3FcroBvCEsNENz0ISrJahzmex20Bz1nv0vCItT1MyY8zjmHI22tr6lRN72minWHNm1BcJJt_cWN6V5lSmomeygaqGdD1cylR0F2rSVjXVEVqV-qhmdT-F9s0j2I"
+      "Authorization": "Bearer BQDkM3Ne0Wux1Iy2gi9nqJRLeCP2wLdhGux2UZ0yj6UltIfWEOZ_eAFcJPwe-5V0HevQmQZtRmTTLvq6hwfEDrK4yCnXpj0LszsWIE3ldSx7SYDzhA-ZtanuqcRB86IR17vSsACopSEviGsz2Psm_zns0LgDxZJ4tT2NCbAIwP8bOIsd4ZEGNUSsweLeL5Q_e8A8FZxxCi_bpWk9lU1K128dB57NLMERZzVqKsyClW5OMbjzL9gYQr7Witbx02-FAR2MtUzSH-RDqj7AFYx-"
 
     }
   }).then(function(response) {
