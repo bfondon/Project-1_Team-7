@@ -23,19 +23,10 @@
         <a class="ui icon button huge ui button" href="Dashboard.html"><i class="book icon"></i></a>
     </div>
 
-    <div class="ui three column grid container">
+    <div class="ui stackable three column grid container">
         <div class="row">
             <div class="column">
-                <h4>Find a Venue</h4>
-                <div class="selectbycountry">
-                    <div class="ui input loading">
-                        <input type="text" placeholder="Search Country">
-                    </div>
-                    <button class="ui inverted purple button" type="button">Submit</button>
-                </div>
-            </div>
-            <div class="column">
-                <div class="column">
+                <h4>Trends!</h4>
                 <div id="form-wrap">
                     <input type="text" id="bandname">
                     <select name="Country" id="countryselect">
@@ -105,6 +96,15 @@
                 </div>
             </div>
             <div class="column">
+                <h4>Find a Venue</h4>
+                <div class="selectbycountry">
+                    <div class="ui input loading">
+                        <input type="text" placeholder="Search Country">
+                    </div>
+                    <button class="ui inverted purple button" type="button">Submit</button>
+                </div>
+            </div>
+            <div class="column">
                 <h4>Top Tracks</h4>
                 <ul>
                     <li>US #1: Hereafter</li>
@@ -149,9 +149,20 @@
         if (window.location.hash) {
             var urlname = decodeURIComponent(window.location.href);
             var textname = urlname.split('#').pop().split('&')[0];
-            var country = urlname.split('=').pop().replace('“','').replace('”','');
+            var country = urlname.split('=').pop().replace('“', '').replace('”', '');
             var divElem = document.getElementById("form-wrap");
-            trends.embed.renderExploreWidgetTo(divElem, "GEO_MAP", { "comparisonItem": [{ "keyword": textname, "geo": country, "time": "today 12-m" }], "category": 0, "property": "" }, { "exploreQuery": "geo="+ country +"&q=" + urlname + "&date=today 12-m", "guestPath": "https://trends.google.com:443/trends/embed/" });
+            trends.embed.renderExploreWidgetTo(divElem, "GEO_MAP", {
+                "comparisonItem": [{
+                    "keyword": textname,
+                    "geo": country,
+                    "time": "today 12-m"
+                }],
+                "category": 0,
+                "property": ""
+            }, {
+                "exploreQuery": "geo=" + country + "&q=" + urlname + "&date=today 12-m",
+                "guestPath": "https://trends.google.com:443/trends/embed/"
+            });
         }
         console.log(window.location);
         $("#trends-submit").click(function () {
@@ -172,7 +183,7 @@
         });
     </script>
     <script type="text/javascript" src="assets/JS/venue-api.js"></script>
-    
+
 
 </body>
 
