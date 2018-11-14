@@ -9,7 +9,7 @@ $("button").click(function () {
     var country = $("input").val().trim().toLowerCase()
     var cityList = $("<div>")
     cityList.attr("id", "city-list")
-    cityList.append("<h2>"+ "Hot cities: " +"</h2>")
+    // cityList.append("<h2>"+ "Hot cities: " +"</h2>")
     $(".selectbycountry").after(cityList)
     for (var i = 0; i < toplistOfCities.length; i++) {
 
@@ -144,11 +144,11 @@ var toplistOfCities =
         },
         {
             country: "germany",
-            cities: ["berlin", "rhine-ruhr", "hamburg"]
+            cities: ["Berlin", "Munich", "Hamburg", "Frankfurt", "Stuttgart", "Cologne"]
 
         }, {
             country: "united kingdom",
-            cities: ["london", "manchester", "birmingham"]
+            cities: ["London", "Birmingham", "Liverpool", "Bristol", "Edinburgh", "Manchester"]
         }, {
             country: "france",
             cities: ["paris", "marseille", "lyon"]

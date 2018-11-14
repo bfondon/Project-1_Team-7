@@ -11,25 +11,43 @@
     <!-- <script type='text/javascript' src='assets/js/game.js'></script> -->
     <link rel="stylesheet" href="assets/CSS/style.css">
     <!-- <link rel="stylesheet" href="assets/CSS/style-api.css"> -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 
 <body>
 
+
         <div class="icons">
                 <a class="ui icon button huge ui button" href="index.html"><i class="home icon"></i></a>
                 <a class="ui icon button huge ui button" href="Dashboard.html"><i class="book icon"></i></a>
+
+    <div class="icons">
+        <a class="ui icon button huge ui button" href="index.html"><i class="home icon"></i></a>
+        <br><br>
+        <a class="ui icon button huge ui button" href="Dashboard.html"><i class="book icon"></i></a>
+    </div>
+
+    <div class="ui two column grid container">
+        <div class="row">
+            <div class="column">
+                <h3>Find a Venue</h3>
+                <div class="selectbycountry">
+                    <div class="ui input loading">
+                        <input type="text" placeholder="Search Country">
+                    </div>
+                    <button class="ui inverted purple button" type="button">Submit</button>
+                </div>
             </div>
-    
-    <div class="ui container" style="margin-top: 5px">
-        <div class="selectbycountry">
-            <input type="text" value="united states">
-            <button type="button">submit</button>
+            <div class="column">
+                <h3>Top Tracks</h3>
+                <div id="topHits"></div>
+
+            </div>
         </div>
-    
     </div>
 
     <script type="text/javascript" src="assets/JS/venue-api.js"></script>
-   
+
 </body>
 
 </html>
