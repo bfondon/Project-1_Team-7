@@ -8,7 +8,9 @@ function ajaxCall(country){
     headers:{
       "Accept": "application/json",
       "Content-Type": "application/json",
-      "Authorization": "Bearer BQBEf0U9YEzcZQ1inZG5sosWtKKjKgTxeQIkanEiWG3Yl0pJmR7ZrMW0Sj8SyDNa23RJZD01CObae_NZug50ciwPhU5xpwrqXXUoH6bO6wKXQdEpnSLD7wS1cMfG-uJLBiYvHBMG17Vgtm4D9N-J5te9VM_lbfy2GPY6g8E_9I0ze5tjCsMEKRvtf7UXWQlo5Y0YRS1nKSso10uSRpQrA5kirLbUCEkvc-vRwK0iZ_cm7cC8rJGn0M_PSiEgLFtrHj7A0HEObsbHr5WUgw"
+
+      "Authorization": "Bearer BQARD5L_9_Zydkq0EZD6ZThql2qh80_hQ-mlzJ9eY_DCCrk_tBtGrBPiePrTcbMlfPIxCl7kQCa0zUfF3Bq4jwUSue8VTdr1TrtYr7WHTcP0quXoSAcBfO8WO59JpnOLFfS1ZwLvBKAjhoKmbSencoLly3FcroBvCEsNENz0ISrJahzmex20Bz1nv0vCItT1MyY8zjmHI22tr6lRN72minWHNm1BcJJt_cWN6V5lSmomeygaqGdD1cylR0F2rSVjXVEVqV-qhmdT-F9s0j2I"
+
     }
   }).then(function(response) {
 
