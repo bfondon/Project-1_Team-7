@@ -1,6 +1,6 @@
 // Performing GET requests to the OMDB API and logging the responses to the console
 var artist = "3PhoLpVuITZKcymswpck5b"
-
+console.log("test");
 function ajaxCall(country){
     $.ajax({
     url: "https://api.spotify.com/v1/artists/"+artist+"/top-tracks?country="+country,
