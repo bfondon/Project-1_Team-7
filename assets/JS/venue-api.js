@@ -3,17 +3,17 @@ var city;
 var limit = 200;
 
 $("button").click(function () {
-
     $("#city-list").remove()
 
-    var country = $("input").val().trim().toLowerCase()
+    var country = $("#searchCountry").val().trim().toLowerCase()
     var cityList = $("<div>")
     cityList.attr("id", "city-list")
     // cityList.append("<h2>"+ "Hot cities: " +"</h2>")
     $(".selectbycountry").after(cityList)
     for (var i = 0; i < toplistOfCities.length; i++) {
-
+        
         var listedCountry = toplistOfCities[i].country
+        console.log(country,listedCountry);
         if (country === listedCountry) {
             for (var j = 0; j < toplistOfCities[i].cities.length; j++) {
                 var newDiv = $("<div>");
@@ -22,7 +22,7 @@ $("button").click(function () {
                 newDiv.attr("id", toplistOfCities[i].cities[j])
                 $("#city-list").append(newDiv)
                 console.log(newDiv.attr("id"));
-
+                
                 $(newDiv).click(function (event) {
 
                     $("#venue-list").remove()
@@ -34,9 +34,14 @@ $("button").click(function () {
 
                     city = $(event.target).attr("id")
                     var queryURL = "https://api.foursquare.com/v2/venues/explore?near=" + city + "&query=music&limit=" + limit + "&client_id=N3WBPOBFZFE3NPZX2UZNQ5SCRRXVRXV0DTXQQ0NIJHYAU1YX&client_secret=ZXWPDZ33GEYF0FDKTX1DXFTYNCIPXVC1TIWTHFR2UTYGCKZX&v=20180101"
+                    console.log(queryURL);
                     $.ajax({
                         url: queryURL,
-                        method: "GET"
+                        method: "GET",
+                        error: function(xml,status,err){
+                            console.log(err);
+                            console.log(status);
+                        }
                     }).then(function (callback) {
                         console.log(callback)
 
