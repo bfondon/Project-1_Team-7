@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1605_RC01/embed_loader.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <!-- <script type='text/javascript' src='assets/js/game.js'></script> -->
     <link rel="stylesheet" href="assets/CSS/style.css">
@@ -22,7 +23,7 @@
         <a class="ui icon button huge ui button" href="Dashboard.html"><i class="book icon"></i></a>
     </div>
 
-    <div class="ui two column grid container">
+    <div class="ui three column grid container">
         <div class="row">
             <div class="column">
                 <h4>Find a Venue</h4>
@@ -34,14 +35,110 @@
                 </div>
             </div>
             <div class="column">
+                <div class="column">
+                <div id="form-wrap">
+                    <input type="text" id="bandname">
+                    <select name="Country" id="countryselect">
+                        <option value=“US”>United States</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AT">Austria</option>
+                        <option value="AU">Australia</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brazil</option>
+                        <option value="CA">Canada</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DE">Germany</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ES">Spain</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="GR">Greece</option>
+                        <option value="GT">Guatamala</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="CO">Colombia</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HU">Hungary</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IT">Italy</option>
+                        <option value="JP">Japan</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="LV">Latvia</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MT">Malta</option>
+                        <option value="MX">Mexico</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NO">Norway</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="PA">Panama</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="SE">Sweden</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SK">Slovakia</option>
+                        <option value=“SV”>El Salvador</option>
+                        <option value=”TR”>Turkey</option>
+                        <option value=”TW”>Taiwan</option>
+                        <option value=“UY”>Uruguay</option>
+                    </select>
+                    <button id="trends-submit">Submit</button>
+                </div>
+            </div>
+            <div class="column">
                 <h4>Top Tracks</h4>
                 <div id="topHits"></div>
 
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        if (window.location.hash) {
+            var urlname = decodeURIComponent(window.location.href);
+            var textname = urlname.split('#').pop().split('&')[0];
+            var country = urlname.split('=').pop().replace('“','').replace('”','');
+            var divElem = document.getElementById("form-wrap");
+            trends.embed.renderExploreWidgetTo(divElem, "GEO_MAP", { "comparisonItem": [{ "keyword": textname, "geo": country, "time": "today 12-m" }], "category": 0, "property": "" }, { "exploreQuery": "geo="+ country +"&q=" + urlname + "&date=today 12-m", "guestPath": "https://trends.google.com:443/trends/embed/" });
+        }
+        console.log(window.location);
+        $("#trends-submit").click(function () {
+            if (!window.location.hash) {
+                var name = $("#bandname").val();
+                var country = $("#countryselect").val();
+                name = name.replace(" ", "%20");
+                window.location = window.location + '#' + name + "&country=" + country;
+                window.location.reload();
+            } else {
+                var name = $("#bandname").val();
+                var country = $("#countryselect").val();
+                name = name.replace(" ", "%20");
+                window.location = window.location.href.split('#')[0] + '#' + name + "&country=" + country;
+                window.location.reload();
+            }
 
+        });
+    </script>
     <script type="text/javascript" src="assets/JS/venue-api.js"></script>
+    
 
 </body>
 
