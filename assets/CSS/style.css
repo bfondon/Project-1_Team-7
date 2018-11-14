@@ -10,29 +10,40 @@ body, html {
     padding: 25px;
 }
 
+
+p{
+    text-align:center;
+
 h3 {
     padding: 10px;
     color: white;
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 h1 {
-    color: red;
+    color: rgb(168, 28, 28);
     font-family: Noto Serif;
     font-size: 3.25rem;
     font-weight: bold;
     text-align: center;
 }
-h2, #results-heading {
+
+h2, h3, #results-heading {
     color: white;
     text-align: center;
 }
 
-
-#clear, #spotify-results, #trends-results, #methodology {
+#spotify-results, #trends-results, #methodology {
     background:rgba(0,0,0,0.25);
     color: white;
+}
+
+#clear{
+    background:rgba(168, 28, 28, 0.40);
+    color: white;
+    padding: 15px 105px;
 }
 
 .item {
@@ -41,6 +52,7 @@ h2, #results-heading {
 
 .ui_vertical_segment{
     margin:30px 15px;
+    padding: 30px 40px;
 }
 
 #venue-list {
@@ -71,4 +83,8 @@ h2, #results-heading {
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
-/* This is some shit. */
+
+@media only screen and (min-width: 768px) {
+    .ui_vertical_segment {width:60%;
+    margin:35px auto;}
+}
