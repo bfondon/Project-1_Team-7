@@ -48,7 +48,7 @@ $("button").click(function () {
                                 var f = callback.response.groups[0].items[i].venue.categories[0].pluralName
                                 if (f === "Rock Clubs" || f === "Nightclubs" || f === "Music Venues" || f === "Jazz Clubs" || f === "Lounges") {
                                     var newDiv2 = $("<div>");
-                                    newDiv2.append("<h4>" + venueName + "</h4>");
+                                    newDiv2.append("<h5>" + venueName + "</h5>");
                                     newDiv2.addClass("venues");
                                     newDiv2.attr("id", venueName)
                                     newDiv2.append("<p>" + formatAddress[0] + "</p>")

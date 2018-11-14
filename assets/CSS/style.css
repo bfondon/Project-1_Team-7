@@ -13,13 +13,19 @@ body, html {
 
 p{
     text-align:center;
+}
 
-h3 {
+h4 {
     padding: 10px;
     color: white;
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+h5{
+    color: black;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
