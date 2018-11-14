@@ -8,7 +8,9 @@ function ajaxCall(country){
     headers:{
       "Accept": "application/json",
       "Content-Type": "application/json",
+
       "Authorization": "Bearer BQARD5L_9_Zydkq0EZD6ZThql2qh80_hQ-mlzJ9eY_DCCrk_tBtGrBPiePrTcbMlfPIxCl7kQCa0zUfF3Bq4jwUSue8VTdr1TrtYr7WHTcP0quXoSAcBfO8WO59JpnOLFfS1ZwLvBKAjhoKmbSencoLly3FcroBvCEsNENz0ISrJahzmex20Bz1nv0vCItT1MyY8zjmHI22tr6lRN72minWHNm1BcJJt_cWN6V5lSmomeygaqGdD1cylR0F2rSVjXVEVqV-qhmdT-F9s0j2I"
+
     }
   }).then(function(response) {
 
