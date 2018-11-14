@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    background-image: url("../images/livemusic4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#page-heading{
+    padding: 25px;
+}
+
+h3 {
+    padding: 10px;
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: red;
+    font-family: Noto Serif;
+    font-size: 3.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+h2, #results-heading {
+    color: white;
+    text-align: center;
+}
+
+
+#clear, #spotify-results, #trends-results, #methodology {
+    background:rgba(0,0,0,0.25);
+    color: white;
+}
+
+.item {
+    color: blue;
+}
+
+.ui_vertical_segment{
+    margin:30px 15px;
+}
+
+#venue-list {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+#city-list {
+    color: white;
+    font-size: 15px;
+}
+.cities {
+    padding: 10px;
+}
+
+.cities:hover,
+.cities:active {
+    background-color: blueviolet;
+}
+
+.venues{
+    background-color: #E6E6FA;
+    color: black;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+/* This is some shit. */
