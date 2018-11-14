@@ -11,9 +11,15 @@ body, html {
 }
 
 
-p{
+p {
     text-align:center;
     font-size: 1.25rem;
+}
+
+li {
+    color:white;
+    font-weight: bold;
+    font-size: 1.15rem;
 }
 
 #content {
@@ -47,7 +53,7 @@ h2, h3, #results-heading {
     text-align: center;
 }
 
-#spotify-results, #trends-results, #methodology {
+#spotify-results, #trends-results, #methodology, ul {
     background:rgba(0,0,0,0.25);
     color: white;
 }
