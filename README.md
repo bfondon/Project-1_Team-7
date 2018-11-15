@@ -2,11 +2,11 @@
 **TourStation** - Deployed Page:https://bfondon.github.io/Project-1_Team-7/
 
 ## Team Members:
-* Ben Fondon -- Project Manager
-* Michael Baggett -- Utility
-* Peng Si -- Firebase
-* Ellie Audet -- Front End GUI / CSS
-* Tony Velasco -- Back End / API
+* Ben Fondon -- Project Manager, UI
+* Michael Baggett -- Frontend & UI, Github Wizard
+* Peng Si -- Backend/API, FourSquare
+* Ellie Audet -- Backend/API, Google Trends
+* Tony Velasco -- Backend/API, Spotify
 
 # Project Description
 Utilize APIs to create a system that allows touring musicians to quickly find markets where their songs are most popular.
