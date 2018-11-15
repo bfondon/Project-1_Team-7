@@ -1,6 +1,8 @@
-# Project/Application Name
-**TourStation** - Deployed Page:https://bfondon.github.io/Project-1_Team-7/
-                  Slideshow Presentation: https://docs.google.com/presentation/d/1lqmy5MsKjuyAODdpzFryjNoamOHJcUUmkkbhP0UGdAI/edit?usp=sharing
+# TourStation 
+
+Deployed Page: https://bfondon.github.io/Project-1_Team-7/
+
+Slideshow Presentation: https://bit.ly/2qVTWwB
 
 ## Team Members:
 * Ben Fondon -- Project Manager, UI
@@ -18,8 +20,9 @@ Name, Address, Website URL, and Capacity.
 ![web 1920 1](https://user-images.githubusercontent.com/44389263/48157464-4aef4780-e295-11e8-82ff-c5428912b59e.png)
 
 # Suggested APIs:
-Spotify
-BandCamp/Songkick
+* Spotify
+* Foursquare
+* Google Trends
 
 # Tasks
 Create HTML framework
