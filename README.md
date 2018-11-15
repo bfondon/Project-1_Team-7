@@ -1,5 +1,6 @@
 # Project/Application Name
 **TourStation** - Deployed Page:https://bfondon.github.io/Project-1_Team-7/
+                  Slideshow Presentation: https://docs.google.com/presentation/d/1lqmy5MsKjuyAODdpzFryjNoamOHJcUUmkkbhP0UGdAI/edit?usp=sharing
 
 ## Team Members:
 * Ben Fondon -- Project Manager, UI
