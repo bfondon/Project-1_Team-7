@@ -19,7 +19,7 @@ Name, Address, Website URL, and Capacity.
 # Possible Interface
 ![web 1920 1](https://user-images.githubusercontent.com/44389263/48157464-4aef4780-e295-11e8-82ff-c5428912b59e.png)
 
-# Suggested APIs:
+# APIs:
 * Spotify
 * Foursquare
 * Google Trends
